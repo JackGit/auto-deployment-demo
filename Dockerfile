@@ -6,7 +6,7 @@ WORKDIR /home/app
 
 # Bundle app source
 COPY . /home/app
-RUN npm install --production
+RUN npm install
 
 EXPOSE 8080
 CMD [ "node", "app.js" ]
